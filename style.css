@@ -1,0 +1,229 @@
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    padding-top: 90px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    background-color:indianred;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 998px;
+    margin: 0 auto;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    font-size: 30px;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.logo:hover{
+color: black;
+transition: 0.4s;
+}
+
+.nav-menu{
+    list-style: none;
+    display: flex;
+    margin-right: 40px;
+    font-size: 18px;
+}
+
+.nav-menu-item{
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+
+.nav-menu-link:hover,
+.nav-menu-link_active{
+    background-color: black;
+    transition: 0.4s;
+}
+
+.toggle{
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    line-height: 60px;
+    display: none;
+    padding: 0 20px;
+    cursor: pointer;
+}
+section{
+    max-width: 998px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.group{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    
+}
+.descarga-btn{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: black;
+}
+h2{
+    margin: 0 20px;
+}
+
+img{
+    height: 250px;
+    border-radius: 6px;
+
+}
+.iris{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: indianred;
+    padding: 10px;
+    border-radius: 4px;
+}
+.iris-text{
+    width: 50%;
+    margin: 0 20px;
+    color: white;
+}
+
+.iris-text p{
+    margin-bottom: 20px;
+}
+.iris img{
+    height: 250px;
+    border-radius: 50%;
+}
+.card1{
+    margin: 10px 15px;
+}
+
+footer{
+    text-align: center;
+    padding: 1.5rem;
+    background-color: indianred;
+}
+
+.anjinho, .pestinha, .family{
+    scroll-margin-top: 90px;
+}
+
+.card1 video{
+    height: 236px;
+}
+
+
+@media(max-width: 669px){
+    .header{
+        height: 60px;
+    }
+    
+    .logo{
+        font-size: 22px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    
+    
+    
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        margin: 0;
+        font-size: 16px;
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        align-items: center;
+        height: calc(100% - 60px);
+        padding: 0;
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.4s;
+    }
+    
+    .nav-menu-item{
+        line-height: 90px;
+    }
+    
+    .nav-menu-link{
+        padding: 8px 12px;
+        border-radius: 3px;
+    }
+
+    .nav-menu-link:hover,
+    .nav-menu-link_active{
+        background:none;
+        color: indianred;
+        transition: 0.4s;
+    }
+
+    .nav-menu_active{
+        left: 0;
+    }
+    
+    .toggle{
+        display: block;
+    }
+
+    
+h2{
+    font-size: 16px;
+}
+
+.group{
+    
+    justify-content: center;
+}
+
+
+.iris img{
+    height: 150px;
+}
+.iris{
+    justify-content: center;
+}
+.iris-text{
+    width: 70%;
+    margin: 10px 5px;
+}
+h3{
+    font-size: 15px;
+}
+
+.card1 video{
+    height: 180px;
+}
+
+}
